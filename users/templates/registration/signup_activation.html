@@ -1,0 +1,11 @@
+{% autoescape off %}
+Bonjour {{ user.first_name }},
+
+Cliquez sur le lien pour confirmer votre inscription :
+
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+Si cet email ne vous concerne pas, veuillez l'ignorer.
+
+A bientôt sur MyFrenchPlatform :)
+{% endautoescape %}

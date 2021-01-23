@@ -1,0 +1,20 @@
+<!-- Navbar if user is not authenticated -->
+{% load static %}
+
+  <h5 class="font-weight-bold font-italic text-white">Espace de pratique, d'échange et de communication en français</h5>
+
+  <ul class="navbar-nav ml-auto">
+
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'signup' %}">
+        <i class="fas fa-user fa-sm fa-fw mr-2"></i>S'inscrire
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'login' %}">
+        <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2"></i>Se connecter
+      </a>
+    </li>
+
+  </ul>
